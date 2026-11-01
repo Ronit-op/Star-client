@@ -3,7 +3,7 @@
 	"id": "starclient",
 	"version": "${version}",
 	"name": "Star Client",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A lightweight, customizable Minecraft client focused on PvP quality-of-life features, performance, and personalization.",
 	"authors": [
 		"Me!"
 	],
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/starclient/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,12 +23,13 @@
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
+		    "starclient.mixins.json",
+			    {
+				        "config": "starclient.client.mixins.json",
+						        "environment": "client"
+								    }
+									],
+	]
 	"depends": {
 		"fabricloader": ">=0.20.1",
 		"minecraft": "~1.21.11",
