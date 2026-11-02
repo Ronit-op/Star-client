@@ -1,39 +1,38 @@
 {
-	"schemaVersion": 1,
-	"id": "starclient",
-	"version": "${version}",
-	"name": "Star Client",
-	"description": "A lightweight, customizable Minecraft client focused on PvP quality-of-life features, performance, and personalization.",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/starclient/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"dev.starclient.ExampleMod"
-		],
-		"client": [
-			"dev.starclient.client.ExampleModClient"
-		]
-	},
-	"mixins": [
-		    "starclient.mixins.json",
-			    {
-				        "config": "starclient.client.mixins.json",
-						        "environment": "client"
-								    }
-									],
-	]
-	"depends": {
-		"fabricloader": ">=0.20.1",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "starclient",
+  "version": "${version}",
+  "name": "Star Client",
+  "description": "A lightweight, customizable Minecraft client focused on PvP quality-of-life features, performance, and personalization.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Ronit-op/Star-client"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/starclient/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.starclient.ExampleMod"
+    ],
+    "client": [
+      "dev.starclient.client.ExampleModClient"
+    ]
+  },
+  "mixins": [
+    "starclient.mixins.json",
+    {
+      "config": "starclient.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
