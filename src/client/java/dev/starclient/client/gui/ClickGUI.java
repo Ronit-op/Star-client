@@ -267,12 +267,19 @@ public class ClickGUI extends Screen {
         g.fill(px(x1), py(y1), px(x2), py(y2), color);
     }
 
+    private Component styled(String value) {
+        return Component.literal(value).withStyle(style ->
+            style.withFont(new net.minecraft.network.chat.FontDescription.Resource(
+                net.minecraft.resources.Identifier.fromNamespaceAndPath("starclient", "ui")))
+        );
+    }
+
     private void text(GuiGraphics g, String value, int x, int y, int color) {
-        g.drawString(this.font, value, px(x), py(y), color, false);
+        g.drawString(this.font, styled(value), px(x), py(y), color, false);
     }
 
     private void centered(GuiGraphics g, String value, int x, int y, int color) {
-        g.drawCenteredString(this.font, value, px(x), py(y), color);
+        g.drawCenteredString(this.font, styled(value), px(x), py(y), color);
     }
 
     private int px(int x) { return panelX + (int) (x * scale); }

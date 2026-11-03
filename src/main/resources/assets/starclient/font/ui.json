@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "starclient:font/outfit.ttf",
+      "shift": [0.0, 0.0],
+      "size": 11.0,
+      "oversample": 2.0
+    }
+  ]
+}
